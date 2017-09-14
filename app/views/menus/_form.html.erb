@@ -2,13 +2,14 @@
   <%= f.error_notification %>
 
   <div class="form-inputs">
-    <%= f.input :name %>
+    <%= f.input :name, placeholder: "Enter the item name", label: "Item name" %>
     <%= f.input :price %>
     <%= f.input :ingredient %>
     <%= f.input :description %>
     <%= f.input :calories %>
-    <%= f.input :category %>
-    <%= f.input :dietary_requirement %>
+    <%= f.input :category, collection: ["Drinks","Desserts","Hot Food"] %>
+    <%= f.input :dietary_requirement, collection: ["vegan", "gluten free"] %>
+    <%= f.input :picture, as: :file %>
   </div>
 
   <div class="form-actions">

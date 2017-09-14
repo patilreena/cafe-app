@@ -31,9 +31,15 @@
 </p>
 
 <p>
-  <strong>Dietary requirement:</strong>
+  <strong>Dietary requirement:hello</strong>
   <%= @menu.dietary_requirement %>
 </p>
+
+<p>
+  <%= image_tag(@menu.picture) %>
+
+</p>
+<!-- figure out how to upload the images -->
 
 <%= link_to 'Edit', edit_menu_path(@menu) %> |
 <%= link_to 'Back', menus_path %>
